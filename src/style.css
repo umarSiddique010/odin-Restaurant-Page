@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #e1e1e1;
+  font-family: monospace;
+  font-weight: 400;
+}
+
+h1 {
+  color: #212121;
+  text-align: center;
+  text-shadow: 2px 1px #575757;
+  font-size: 6rem;
+  font-weight: bolder;
+  border: none;
+  font-family: fantasy;
+}
+
+/* ----------- NAV BAR ------------ */
+
+.logo {
+  position: fixed;
+  left: 40px;
+  top: 5px;
+  height: 60px;
+  width: 60px;
+  z-index: 100;
+  border: none;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  background-color: #092d2d;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  align-items: center;
+  padding: 20px;
+  top: 0;
+  box-shadow: #105151 0 0 15px 0;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+nav button {
+  background-color: transparent;
+  font-size: 1.7rem;
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+nav button:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+
+
+/* -----Home------- */
+
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+}
+
+.home-img {
+  width: 100vw;
+  height: 85vh;
+  border: none;
+}
+
+.welcome-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: fit-content;
+  width: fit-content;
+  padding: 45px;
+  font-size: 1.9rem;
+  background-color: #3dadad;
+  color: #f0f0f0;
+  box-shadow: #8cbcbc 0 0 90px 0;
+  border: none;
+  margin: 50px 0;
+  border-radius: 5px;
+  font-style: oblique;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.menu-btn {
+  height: 2.6em;
+  width: 6.6em;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+  color: #d8d8d8;
+  background-color: #221b86;
+  font-size: 1.2rem;
+  font-family: cursive;
+  font-weight: 600;
+}
+
+.menu-btn:hover {
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+  background-color: #090087;
+  transform: scale(1.2);
+}
+
+.menu-btn:focus {
+  outline: 2px solid #090087;
+  outline-offset: 2px;
+}
+
+/* ----------- MENU ------------------  */
+
+.menu-content {
+  width: 100vw;
+  height: 100%;
+  margin: 80px 5px;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+  margin: 120px 10px;
+}
+
+.item-img {
+  height: 220px;
+  width: 360px;
+}
+
+.card-box {
+  height: 320px;
+  width: 420px;
+  padding: 45px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #cdcdcd;
+  box-shadow: #b8d4d4 0 0 2px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-box:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+/* --------- CONTACT ---------- */
+
+.contact-content {
+  width: 100vw;
+  height: 100%;
+  margin: 80px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact-content h1 {
+  font-size: 7rem;
+  margin-bottom: 20px;
+}
+
+.contact-box h2 {
+  margin: 20px 0;
+  font-size: 2.7rem;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 3.9px;
+}
+
+.contact-box {
+  font-size: 2rem;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 80%;
+  width: 80%;
+  background-color: #ab8181;
+  border: none;
+  border-radius: 10px;
+  padding: 90px;
+}
+
+/* -------- ABOUT US ------------ */
+
+.about-content {
+  width: 100vw;
+  height: 100%;
+  margin: 80px 5px;
+}
+
+.about-content h1 {
+  margin-top: 100px;
+}
+
+.about-para {
+  font-size: 2rem;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  background-color: #93ab81;
+  color: #ececec;
+  border: none;
+  border-radius: 10px;
+  padding: 100px;
+  line-height: 50px;
+  letter-spacing: 4.2px;
+  text-align: center;
+  font-weight: 500;
+  font-style: oblique;
+  box-shadow: #939f89 0 0 10px 0;
+}
+
+#footer {
+  height: auto;
+  width: auto;
+  padding: 80px;
+  background-color: #94a785;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#credit {
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  background-color: #e0e0e0;
+  color: #212121;
+  box-shadow: #9f9f9f 0 0 18px 0;
+  padding: 40px;
+  line-height: 30px;
+}
+
+#links {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+#links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #3f0101;
+}
+
+/* ------media Query------- */
+
+@media (max-width: 527px) {
+  
+  h1 {
+    font-size: 4rem;
+    overflow-x: hidden;
+  }
+  
+  .logo {
+    left: 10px;
+    top: 10px; 
+    height: 50px;
+    width: 50px;
+  }
+
+
+  nav {
+    flex-direction: column; 
+    gap: 10px; 
+    padding: 15px 10px; 
+    overflow-x: hidden;
+  }
+
+ 
+  nav button {
+    font-size: 1.4rem; 
+
+  }
+
+
+  .home-img {
+    width: 100vw;
+    height: 390px;
+    border: none;
+  }
+
+
+  #content {
+    margin-top: 220px;
+    overflow-x: hidden;
+  }
+
+
+
+  .card-box {
+    width: 320px;
+    height: auto;
+    padding: auto;
+    margin-left: -25px;
+  }
+
+  .item-img {
+    height: 190px;
+    width: 260px;
+  }
+
+
+  .contact-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+
+
+.contact-box, .about-para  {
+  height: fit-content;
+  width: auto;
+  line-height: 56px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+  
+
+
+  #footer {
+    width: 100vw;
+    height: fit-content;
+    overflow-x: hidden;
+  }
+
+  #links {
+    grid-template-columns: repeat(2, auto);
+  }
+}
